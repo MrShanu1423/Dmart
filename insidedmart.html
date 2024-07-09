@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiMart Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left {
+    background-color: #e1f5fe;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://content.dmart.in/website/_next/static/media/auth-background.f7749174.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.right {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: white;
+    cursor: not-allowed;
+}
+
+button.enabled {
+    background-color: #4caf50;
+    cursor: pointer;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            
+            <img src="https://content.dmart.in/website/_next/static/media/auth.0c944c7e.svg" alt="Shopping Girl" class="illustration">
+        </div>
+        <div class="right">
+            <h2>Help Us Know You Better</h2>
+            <p>Hey, you seem to be new here. Please provide your name details.</p>
+            <form id="userForm">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                <button type="submit" id="submitButton" disabled>Save and Continue</button>
+            </form>
+            <a href="#" id="goBack">Go Back</a>
+        </div>
+    </div>
+    <script src="inside.js"></script>
+</body>
+</html>

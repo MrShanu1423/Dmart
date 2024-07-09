@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="C:\frontend\Frontend-Devops\.vscode\.vscode"></script>
+
+<style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6f5e9;
+}
+
+.container {
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+}
+
+.left-side {
+    background-color: #e6f5e9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-image: url('https://content.dmart.in/website/_next/static/media/auth-background.f7749174.png'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+    width: 100px;
+    z-index: 1;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 200px;
+    z-index: 1;
+}
+
+.right-side {
+    padding: 40px;
+    width: 60%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group span {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+p {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+p a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    color: white;
+    cursor: not-allowed;
+}
+
+button:enabled {
+    background-color: #28a745;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <script src="login.js">
+    </script>
+
+    <div class="container">
+        <div class="left-side">
+            <img src="https://cdn.dmart.in/images/icons/dmart_ready_logo.svg" alt="Damrt" class="logo">
+            <img src="https://content.dmart.in/website/_next/static/media/auth.0c944c7e.svg" alt="Shopping Girl" class="illustration">
+        </div>
+        <div class="right-side">
+            <h1>Let's Get You Logged In</h1>
+            <form>
+                <label for="phone">Enter your 10 digit mobile number</label>
+                <div class="input-group">
+                    <span>+91</span>
+                    <input type="text" id="phone" name="phone" maxlength="10">
+                </div>
+                <p>By continuing, you agree to our <a href="#">Terms</a>, <a href="#">Refunds</a> and <a href="#">Privacy Policy</a></p>
+                <button id="continue-button" type="submit" disabled>CONTINUE</button>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
